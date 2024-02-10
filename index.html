@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-P0CP8PZFH9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-P0CP8PZFH9');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="A website that calculates how much water you should drink each day.">
+    <meta name="keywords" content="water, hydration, health">
+    <meta name="author" content="Your Name">
+    <title>Water Intake Calculator</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-xQnGNnLsYsRvMxTtTnTtEnra+a3+qEwbAP/UN9hPNQsq/0+YlRINPvTjGWLOzLJtB8mlLrNvA9ShgJluBBEfQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="text-center">How Much Water Should I Drink Each Day?</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p class="text-center">Enter your weight in pounds or kgs</p>
+                <form>
+                    <div class="mb-3">
+                        <label for="weight" class="form-label1">Your Weight</label>
+                        <div class="input-group">
+                            <input type="number" class="form-control" id="weight" name="weight" required>
+                            <span class="input-group-text" id="weight-unit">lb</span>
+                        </div>
+                    </div>
+                    <div class="mb-3 form-check form-switch">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" id="unit-toggle" data-on="KG" data-off="LB">
+                            <span class="slider"></span>
+                        </label>
+                        <span id="weight-unit-label" class="ml-2">lb</span>
+                        <label for="unit-toggle-label" class="form-label2 ml-2">Toggle between lb and kg</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block" id="calculate-btn">💦🌊🧊 CALCULATE
+                        💦🌊🧊</button>
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 mt-5">
+                <div id="result" class="text-center"></div>
+            </div>
+        </div>
+    </main>
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-rNl5/R5aLhqFQq3yg9+l8WYIdzxLaaBUBt      crossorigin=" anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6Vr8xZfsVivaUksCwEa/8Tp8oOrC1YUbh"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
